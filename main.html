@@ -4,13 +4,66 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	    <style>
+        /* Set the background color using :root */
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        /* Style for the article and paragraphs */
+        article p:first-child {
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+
+        article p:nth-child(2) {
+            color: inherit; /* Standard text color */
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        /* Style for the unordered list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 50%;
+        }
+
+        ul li {
+            background-color: gray;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        ul li:first-child, ul li:last-child {
+            font-size: 22px;
+        }
+
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <article>
+        <p>This is the first paragraph with white text on a black background.</p>
+        <p>This is the second paragraph with standard text color.</p>
+        <p>This is the third paragraph with red text.</p>
+    </article>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
 </body>
 
 </html>
